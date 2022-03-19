@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN" "http://hibernate.org/dtd/hibernate-mapping-2.0.dtd">
+<hibernate-mapping package= "ma.fstm.ilisi.gestioncantact.model.bo" >
+    <class name="Contact" table="contact">
+        <id name="id" >
+            <generator class="identity">
+            </generator>
+        </id>
+        <property name="tele" type="string" not-null="true" column="numero" />
+        <property name="nom" type="string"  not-null="true" />
+        <property name="prenom" type="string" not-null="true" />
+        
+        <many-to-one name="type" class="Type" lazy="false" fetch="select">
+       		 <column name="type"  precision="5" scale="0" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

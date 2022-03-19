@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/ElMehdi/Downloads/mysql-connector-java-8.0.28/mysql-connector-java-8.0.28.jar"/>
+	<classpathentry kind="lib" path="C:/ser/hibernate-commons-annotations-5.1.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/ser/hibernate-entitymanager-5.6.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/ser/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/ser/byte-buddy-1.11.20.jar"/>
+	<classpathentry kind="lib" path="C:/ser/classmate-1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/ser/FastInfoset-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/ser/hibernate-core-5.6.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/ser/istack-commons-runtime-3.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/ser/jandex-2.2.3.Final.jar"/>
+	<classpathentry kind="lib" path="C:/ser/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/ser/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/ser/jaxb-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/ser/jaxb-runtime-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/ser/jboss-logging-3.4.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/ser/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/ser/stax-ex-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/ser/txw2-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/PostgreSQL/pgJDBC/postgresql-42.2.18.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

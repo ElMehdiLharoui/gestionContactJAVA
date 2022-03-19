@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN" "http://hibernate.org/dtd/hibernate-mapping-2.0.dtd">
+<hibernate-mapping package="ma.fstm.ilisi.gestioncantact.model.bo">
+    <class name="Type" table="type">
+        <id name="type" type="string" >
+            <generator class="identity">
+
+            </generator>
+        </id>
+        <set  table="type" name="listContact"  inverse="true"  lazy="true">
+            <key>
+            <column name="type" not-null="true"/>
+            </key>
+            <one-to-many class="ma.fstm.ilisi.gestioncantact.model.bo.Contact"/>
+        </set>
+    </class>
+</hibernate-mapping>
