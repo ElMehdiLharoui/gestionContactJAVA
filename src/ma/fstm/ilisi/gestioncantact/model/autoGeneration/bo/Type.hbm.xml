@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="ma.fstm.ilisi.gestioncantact.model.bo.Type" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="type">
+        <id name="type" type="string">
+            <column length="10" name="type"/>
+            <generator class="assigned"/>
+        </id>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="contacts" optimistic-lock="true" sort="unsorted" table="contact">
+            <key on-delete="noaction">
+                <column length="20" name="type" not-null="true"/>
+            </key>
+            <one-to-many class="ma.fstm.ilisi.gestioncantact.model.bo.Contact" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>

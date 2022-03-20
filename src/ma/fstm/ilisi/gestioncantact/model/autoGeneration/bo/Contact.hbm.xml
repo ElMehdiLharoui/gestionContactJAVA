@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="ma.fstm.ilisi.gestioncantact.model.bo.Contact" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="contact">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <many-to-one class="ma.fstm.ilisi.gestioncantact.model.bo.Type" embed-xml="true" fetch="select" insert="true" name="type" not-found="exception" optimistic-lock="true" unique="false" lazy="false" update="true">
+            <column length="20" name="type" not-null="true"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="nom" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="nom" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="prenom" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="prenom" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="numero" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="numero" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
